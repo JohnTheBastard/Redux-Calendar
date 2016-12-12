@@ -1,9 +1,9 @@
-let nextEventId = 0
+import uuid from 'uuid'
 
 export const addEvent = (name, description, location, startDate, endDate, repeating) => {
   return {
     type: 'ADD_EVENT',
-    id: nextEventId++,
+    id: uuid.v4(),
     name,
     description,
     location,

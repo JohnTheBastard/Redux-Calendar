@@ -23,7 +23,7 @@ const event = (state = {}, action) => {
   }
 }
 
-const events = (state = [], action) => {
+const Events = (state = [], action) => {
   switch (action.type) {
     case 'ADD_EVENT':
       return [
@@ -37,4 +37,4 @@ const events = (state = [], action) => {
   }
 }
 
-export default events
+export default Events

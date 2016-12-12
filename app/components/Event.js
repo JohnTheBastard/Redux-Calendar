@@ -15,4 +15,4 @@ const propTypes = {
   text: React.PropTypes.string.isRequired
 }
 
-export default Object.assign(Todo, propTypes)
+export default Object.assign(Event, propTypes)
