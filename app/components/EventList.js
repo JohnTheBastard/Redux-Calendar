@@ -12,7 +12,7 @@ const EventList = ({ events, onEventClick }) =>
     )}
   </ul>
 
-const propTypes = {  //TODO: prop shapes?
+const propTypes = {  // TODO: prop shapes?
   events: PropTypes.arrayOf(PropTypes.shape({
     id: PropTypes.number.isRequired,
     name: PropTypes.string.isRequired,
@@ -20,7 +20,7 @@ const propTypes = {  //TODO: prop shapes?
     location: PropTypes.string.isRequired,
     startDate: PropTypes.string.isRequired,
     endDate: PropTypes.string.isRequired,
-    repeating: PropTypes.string.isRequired,   //TODO: bool isn't right, needs interval
+    repeating: PropTypes.string.isRequired,   // TODO: bool isn't right, needs interval
     completed: PropTypes.bool.isRequired
   }).isRequired).isRequired,
   onEventClick: PropTypes.func.isRequired

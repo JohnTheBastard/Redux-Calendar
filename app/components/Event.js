@@ -1,6 +1,6 @@
 import React from 'react'
 
-//TODO: this is all wrong for our purposes
+// TODO: this is all wrong for our purposes
 const Event = ({ onClick, completed, text }) =>
   <li
     onClick={onClick}

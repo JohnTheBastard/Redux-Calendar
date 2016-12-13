@@ -1,7 +1,7 @@
 const event = (state = {}, action) => {
   switch (action.type) {
     case 'ADD_EVENT':
-      return {   //TODO: needs photo and tags
+      return {   // TODO: needs photo and tags
         id: action.id,
         name: action.name,
         description: action.description,
@@ -15,7 +15,7 @@ const event = (state = {}, action) => {
         return state
       }
       return Object.assign({}, state, {
-        //TODO: What goes here?
+        // TODO: What goes here?
 //        completed: !state.completed
       })
     default:

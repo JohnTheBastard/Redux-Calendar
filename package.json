@@ -42,6 +42,7 @@
     "html-webpack-template": "^5.5.0",
     "node-sass": "^4.0.0",
     "npm-install-webpack-plugin": "^4.0.4",
+    "remote-redux-devtools": "^0.5.7",
     "sass-loader": "^4.0.2",
     "standard": "^8.6.0",
     "standard-loader": "^5.0.0",
