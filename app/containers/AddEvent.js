@@ -23,5 +23,4 @@ let AddEvent = ({ dispatch }) => {
 }
 
 AddEvent = connect()(AddEvent)
-
 export default AddEvent
