@@ -6,40 +6,41 @@ const AddEventForm = ({ handleSubmit }) =>
     <div>
       <label>Event Name</label>
       <div>
-        <Field name='name' component='input' type='text' placeholder='Event Name' />
+        <Field name='name'
+               placeholder='Event Name'
+               component='input'
+               type='text' />
       </div>
     </div>
     <div>
       <label>Event Description</label>
       <div>
-        <Field name='description' component='textarea' type='text' placeholder='Description' />
+        <Field name='description'
+               placeholder='Description'
+               component='textarea'
+               type='text'  />
       </div>
     </div>
     <div>
-      <label>Start Date/Time</label>
+      <label>Event Start Date/Time</label>
       <div>
-        <Field name='startDate' component='input' type='text' placeholder='Date/Time Start' />
+        <Field name='startDate'
+               placeholder='Start Date'
+               component='input'
+               type='text'  />
       </div>
     </div>
     <div>
-      <label>End Date/Time</label>
+      <label>Event End Date/Time</label>
       <div>
-        <Field name='endDate' component='input' type='text' placeholder='Date/Time End' />
+        <Field name='endDate'
+               placeholder='End Date'
+               component='input'
+               type='text'  />
       </div>
     </div>
-    // <div>
-    //   <label>Tags</label>
-    //   <div>
-    //     <Field name='tags' component='input' type='text' placeholder='Tags' />
-    //   </div>
-    // </div>
-    // <div>
-    //   <label>Photo</label>
-    //   <div>
-    //     <Field name='photo' component='input' type='text' placeholder='Photo' />
-    //   </div>
-    // </div>
-    <input type='submit' value='Add Event' />
+    <input type='submit'
+           value='Add Event' />
   </form>
 
 export default reduxForm({
