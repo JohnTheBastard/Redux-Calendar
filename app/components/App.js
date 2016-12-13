@@ -6,8 +6,8 @@ import VisibleEventList from '../containers/VisibleEventList'
 const App = () =>
   <div>
     <AddEvent />
-    <VisibleEventList />
-    <Footer />
+    //<VisibleEventList />
+    //<Footer />
   </div>
 
 export default App

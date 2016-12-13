@@ -6,18 +6,20 @@ const event = (state = {}, action) => {
         name: action.name,
         description: action.description,
         location: action.location,
+      //  tags: action.tags || [],
+      //  photo: action.photo || '',
         startDate: action.startDate,
-        endDate: action.endDate,
-        repeating: action.repeating
+        endDate: action.endDate
+      //  repeating: action.repeating
       }
-    case 'TOGGLE_EVENT':
-      if (state.id !== action.id) {
-        return state
-      }
-      return Object.assign({}, state, {
-        // TODO: What goes here?
-//        completed: !state.completed
-      })
+//     case 'TOGGLE_EVENT':
+//       if (state.id !== action.id) {
+//         return state
+//       }
+//       return Object.assign({}, state, {
+//         // TODO: What goes here?
+// //        completed: !state.completed
+//       })
     default:
       return state
   }
@@ -30,8 +32,8 @@ const Events = (state = [], action) => {
         ...state,
         event(undefined, action)
       ]
-    case 'TOGGLE_EVENT':
-      return state.map((t) => event(t, action))
+    // case 'TOGGLE_EVENT':
+    //   return state.map((t) => event(t, action))
     default:
       return state
   }

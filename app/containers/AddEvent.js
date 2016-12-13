@@ -1,28 +1,23 @@
 import React from 'react'
+import { reset } from 'redux-form'
 import { connect } from 'react-redux'
 import { addEvent } from '../actions'
+import AddEventForm from '../components/AddEventForm'
 
 let AddEvent = ({ dispatch }) => {
-  let input
   return (
-    <div>
-      <form onSubmit={(e) => {
-        e.preventDefault()
-        if (!input.value.trim()) {
-          return
-        }
-        dispatch(addEvent(input.value))
-        input.value = ''
-      }}>
-        <input
-          ref={(node) => {
-            input = node
-          }}
-          placeholder='New Todo'
-          type='text'
-        />
-        <input type='submit' value='Add Todo' />
-      </form>
+    <div className='AddEvent'>
+      <AddEventForm onSubmit={(values) => {
+        dispatch(addEvent(
+          values.name,
+          values.description,
+        //  values.photo,
+        //  values.tags.split(','),
+          values.startDate,
+          values.endDate
+        ))
+        dispatch(reset('AddEventForm'))
+      }} />
     </div>
   )
 }
