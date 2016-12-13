@@ -4,14 +4,13 @@ const Event = ({ name, description, location,
               // tags, photo,
                  startDate, endDate}) =>
    <div className='Event'>
-     <h3>{name}</h3>
-     <div className='times'>
-       <p>Start Date: {startDate}</p>
-       <p>End Date: {endDate}</p>
-     </div>
+     <h2>{name}</h2>
      <p className='description'>
        {description}
      </p>
+     <div className='times'>
+       <p><b>From:</b> {startDate} &nbsp;&nbsp; <b>To:</b> {endDate}</p>
+     </div>
    </div>
 
 const propTypes = {

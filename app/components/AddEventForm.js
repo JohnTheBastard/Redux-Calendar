@@ -22,6 +22,15 @@ const AddEventForm = ({ handleSubmit }) =>
       </div>
     </div>
     <div>
+      <label>Event Location</label>
+      <div>
+        <Field name='location'
+               placeholder='Location'
+               component='input'
+               type='text'  />
+      </div>
+    </div>
+    <div>
       <label>Event Start Date/Time</label>
       <div>
         <Field name='startDate'

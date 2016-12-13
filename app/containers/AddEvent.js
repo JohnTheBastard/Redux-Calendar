@@ -11,8 +11,9 @@ let AddEvent = ({ dispatch }) => {
         dispatch(addEvent(
           values.name,
           values.description,
-        //  values.photo,
+          values.location,
         //  values.tags.split(','),
+        //  values.photo,
           values.startDate,
           values.endDate
         ))

@@ -24,7 +24,7 @@ const propTypes = {
     endDate: PropTypes.string.isRequired
   //  repeating: PropTypes.string.isRequired,   // TODO: bool isn't right, needs interval
   //  completed: PropTypes.bool.isRequired
-  }).isRequired).isRequired
+}))
 }
 
 export default Object.assign(EventList, { propTypes })
