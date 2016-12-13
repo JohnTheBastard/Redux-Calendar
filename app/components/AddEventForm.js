@@ -1,7 +1,7 @@
 import React from 'react'
 import { Field, reduxForm } from 'redux-form'
 
-const AddEventForm = ({ handleSubmit }) =>
+const eventForm = ({ handleSubmit }) =>
   <form onSubmit={handleSubmit}>
     <div>
       <label>Event Name</label>
@@ -52,6 +52,8 @@ const AddEventForm = ({ handleSubmit }) =>
            value='Add Event' />
   </form>
 
-export default reduxForm({
+const AddEventForm = reduxForm({
   form: 'AddEventForm'
-})(AddEventForm)
+})(eventForm)
+
+export default AddEventForm

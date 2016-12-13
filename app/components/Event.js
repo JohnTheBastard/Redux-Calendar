@@ -4,7 +4,7 @@ const Event = ({ name, description, location,
               // tags, photo,
                  startDate, endDate}) =>
    <div className='Event'>
-     <h2>{name}</h2>
+     <h4>{name}</h4>
      <p className='description'>
        {description}
      </p>

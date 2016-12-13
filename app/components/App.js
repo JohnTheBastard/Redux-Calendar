@@ -7,7 +7,6 @@ const App = () =>
   <div>
     <AddEvent />
     <VisibleEventList />
-
   </div>
 
 export default App

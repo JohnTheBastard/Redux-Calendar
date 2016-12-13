@@ -12,8 +12,8 @@ export const addEvent = (name, description, location,
 //  photo,
 //  tags,
     startDate,
-    endDate,
-    repeating
+    endDate
+    // repeating
   }
 }
 

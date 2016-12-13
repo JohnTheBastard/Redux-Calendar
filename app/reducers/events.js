@@ -1,7 +1,7 @@
 const event = (state = {}, action) => {
   switch (action.type) {
     case 'ADD_EVENT':
-      return {   // TODO: needs photo and tags
+      return {
         id: action.id,
         name: action.name,
         description: action.description,

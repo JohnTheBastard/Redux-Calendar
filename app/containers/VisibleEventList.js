@@ -13,14 +13,14 @@ const dummyData = [{
 
 const getVisibleEvents = (events, filter) => {
   switch (filter) {
-    case 'SHOW_ALL':
-      return events || dummyData
-    case 'SHOW_PAST_EVENTS':
-      return events.filter((t) => t.completed)
-    case 'SHOW_CURRENT_EVENTS':
-      return events.filter((t) => !t.completed)
+    // case 'SHOW_ALL':
+    //   return events || dummyData
+    // case 'SHOW_PAST_EVENTS':
+    //   return events.filter((t) => t.completed)
+    // case 'SHOW_CURRENT_EVENTS':
+    //   return events.filter((t) => !t.completed)
     default:
-      return events || dummyData
+      return events
   }
 }
 
@@ -30,15 +30,15 @@ const mapStateToProps = (state) => {
   }
 }
 
-const mapDispatchToProps = (dispatch) => {
-  return {
-    onEventClick: (id) => dispatch(toggleEvent(id))
-  }
-}
+// const mapDispatchToProps = (dispatch) => {
+//   return {
+//     onEventClick: (id) => dispatch(toggleEvent(id))
+//   }
+// }
 
 const VisibleEventList = connect(
-  mapStateToProps,
-  mapDispatchToProps
+  mapStateToProps
+  // mapDispatchToProps
 )(EventList)
 
 export default VisibleEventList

@@ -8,6 +8,7 @@ let AddEvent = ({ dispatch }) => {
   return (
     <div className='AddEvent'>
       <AddEventForm onSubmit={(values) => {
+        console.log(values)
         dispatch(addEvent(
           values.name,
           values.description,
